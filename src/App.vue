@@ -1,5 +1,6 @@
 <script setup>
 import defButton from "./components/UI/defButton.vue";
+import itemComponent from './components/UI/itemComponent.vue'
 </script>
 
 <template>
@@ -67,22 +68,7 @@ import defButton from "./components/UI/defButton.vue";
 
         </div>
         <div class="items__container">
-          <div class="main_item" v-for="(item, index) in 12" :key="index">
-            <div class="item_photo">
-              <img src="/img/box.svg" alt="box icon" style="align-self: center; justify-self: center;">
-              <div class="item_heatprice">
-                <span class="heatprice_title">Хит продаж </span>
-                <img src="/img/fire.svg" alt="fire icon">
-              </div>
-              <p class="item_sale">25%</p>
-            </div>
-            <div class="item_description">
-              <p class="_gray_text">Бренд</p>
-              <p class="item_text">Полное название товара в несколько строк для вида с обрывом в конце...</p>
-            </div>
-            <p class="item_price">5 990 ₽</p>
-            <defButton>Купить</defButton>
-          </div>
+          <itemComponent v-for="(item, index) in 12" :key="index" />
         </div>
       </div>
     </main>
