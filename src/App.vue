@@ -70,10 +70,6 @@ import itemComponent from './components/UI/itemComponent.vue'
         </div>
       </div>
     </main>
-
-    <!-- <footer>
-      <p>foot</p>
-    </footer> -->
   </div>
 </template>
 
@@ -353,9 +349,9 @@ header {
   padding: 14px 18px; 
   background-color: #73AFF4; 
   color: white;
-  border: none; /* Добавлено для лучшей совместимости */
-  border-radius: 8px; /* Добавлено для лучшей совместимости */
-  cursor: pointer; /* Добавлено для лучшей совместимости */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   @media (min-width: 769px) {
     display: none;
   }
@@ -369,18 +365,17 @@ header {
   }
 }
 
-/* Добавлены стили для Safari */
 * {
-  -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Обеспечивает корректное отображение на всех устройствах */
+  min-height: 100vh;
 }
 
 .header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавлено для улучшения визуального восприятия */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 </style>
