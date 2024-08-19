@@ -64,8 +64,6 @@ import itemComponent from './components/UI/itemComponent.vue'
               </li>
             </ul>
           </div>
-          
-
         </div>
         <div class="items__container">
           <itemComponent v-for="(item, index) in 12" :key="index" />
@@ -100,18 +98,17 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-      width: 20%;
+    width: 20%;
     @media (max-width: 769px) {
       display: none;
     }
-
   }
-  .header__logo_container{
+  .header__logo_container {
     display: flex;
     align-items: center;
     gap: 6px;
   }
-  .header__input{
+  .header__input {
     padding: 14px 18px;
     border: 1px solid #73AFF4;
     background-color: white;
@@ -121,33 +118,31 @@ header {
     @media (max-width: 769px) {
       padding: 10px 14px;
     }
-
   }
-  .header__links{
+  .header__links {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
     gap: 6px;
   }
-  .header__link{
+  .header__link {
     @media (max-width: 769px) {
       display: none;
     }
     font-weight: 400;
     font-size: 14px;
-    color: #393939
+    color: #393939;
   }
 }
 
-
-.main{
+.main {
   width: 100%;
   min-height: 100%;
   flex: 1 1 auto;
   margin-top: 5px;
 
-  .main__container{
+  .main__container {
     min-height: 100%;
     display: flex;
     width: 100%;
@@ -175,8 +170,8 @@ header {
       margin: 4px 0px;
       width: 90%;
     }
-    :first-child{
-      .item_name{
+    :first-child {
+      .item_name {
         margin-left: -15px;
       }
     }
@@ -184,11 +179,11 @@ header {
   .search_price {
     display: flex;
     flex-direction: column;
-    p{
+    p {
       margin-bottom: 16px;
     }
   }
-  .price_container{
+  .price_container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -204,12 +199,12 @@ header {
     justify-content: space-between;
     width: 100%;
   }
-  .select_title{
+  .select_title {
     color: #333333;
     font-weight: 700;
   }
   .search_select {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -233,75 +228,75 @@ header {
     @media (max-width: 768px) {
       width: 100%;
     }
-}
+  }
 
-@media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .items__container {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
 
-@media (max-width: 900px) {
+  @media (max-width: 900px) {
     .items__container {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-@media (max-width: 769px) {
-    .main{
+  }
+  @media (max-width: 769px) {
+    .main {
       margin-top: 0px;
     }
-    .header__logo{
+    .header__logo {
       justify-content: flex-start;
       width: 20%;
     }
-    .arrow_img{
+    .arrow_img {
       display: block;
     }
-    .header__input{
+    .header__input {
       padding: 7px 9px;
     }
-}
-@media (max-width: 426px) {
-  .main_item{
-    font-size: 0.75rem;
   }
-  .item_sale{
-    padding: 7.5px;
+  @media (max-width: 426px) {
+    .main_item {
+      font-size: 0.75rem;
+    }
+    .item_sale {
+      padding: 7.5px;
+    }
+    .items__container {
+      gap: 6px;
+    }
   }
-  .items__container{
-    gap: 6px;
-  }
-}
 
   .list_item input[type="checkbox"] {
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            margin-right: 12px;
-            outline: none;
-            cursor: pointer;
-            transition: background 0.3s, border-color 0.3s;
-        }
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+  }
 
-        .list_item input[type="checkbox"]:checked {
-            background-color: #5b84f1;
-            border-color: #5b84f1;
-            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"%3E%3Cpath d="M20.29 5.71l-11 11a1 1 0 01-1.41 0l-5-5a1 1 0 111.42-1.42L9 14.59l9.29-9.3a1 1 0 011.42 1.42z"/%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+  .list_item input[type="checkbox"]:checked {
+    background-color: #5b84f1;
+    border-color: #5b84f1;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"%3E%3Cpath d="M20.29 5.71l-11 11a1 1 0 01-1.41 0l-5-5a1 1 0 111.42-1.42L9 14.59l9.29-9.3a1 1 0 011.42 1.42z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-        .list_item input[type="checkbox"]:hover {
-            border-color: #aaa;
-        }
-  .list_item{
+  .list_item input[type="checkbox"]:hover {
+    border-color: #aaa;
+  }
+  .list_item {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .item_spacer{
+    .item_spacer {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -316,10 +311,10 @@ header {
   flex-direction: column;
   gap: 16px;
 }
-.main_item:hover{
+.main_item:hover {
   cursor: pointer;
 }
-.main_item:hover .item_photo{
+.main_item:hover .item_photo {
   transform: scale(1.05);
 }
 .item_photo {
@@ -343,7 +338,7 @@ header {
   position: absolute;
   padding: 10px;
   background-color: #7397F5;
-  color:white;
+  color: white;
   border-radius: 4px;
   bottom: 12px;
   left: 12px;
@@ -354,8 +349,13 @@ header {
   flex-direction: column;
   gap: 8px;
 }
-.search_button{
-  padding: 14px 18px; background-color: #73AFF4; color: white;
+.search_button {
+  padding: 14px 18px; 
+  background-color: #73AFF4; 
+  color: white;
+  border: none; /* Добавлено для лучшей совместимости */
+  border-radius: 8px; /* Добавлено для лучшей совместимости */
+  cursor: pointer; /* Добавлено для лучшей совместимости */
   @media (min-width: 769px) {
     display: none;
   }
@@ -363,9 +363,24 @@ header {
     padding: 10px 14px;
   }
 }
-.arrow_img{
+.arrow_img {
   @media (min-width: 769px) {
     display: none;
   }
+}
+
+/* Добавлены стили для Safari */
+* {
+  -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Обеспечивает корректное отображение на всех устройствах */
+}
+
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавлено для улучшения визуального восприятия */
 }
 </style>
